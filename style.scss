@@ -780,6 +780,37 @@ ul {
   margin: 0.5em 0;
 }
 
-.footer {
-  flex: 0 0 auto;
+.main_contact {
+ @include flex-col();
+ margin-bottom: 80px;
+}
+
+.contact {}
+
+.contact_title {
+  font-size: 2em;
+}
+
+.contact_sentence {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.contact_telegram {
+  @include flex-row();
+  padding: 5px;
+  width: 120px;
+  color: #686DCF;
+  margin-bottom: 5px;
+}
+
+.contact_email {
+  @include flex-row();
+  padding: 5px;
+  width: 210px;
+  color: #686DCF;
 }
