@@ -1,80 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous">
+  <title>Portfolio of Juliana</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
 </head>
 
 <body>
   <div class="container">
-    <header class="row justify-content-start align-items-center mt-5 mb-5">
-      <p class="text-dark h1">Portfolio</p>
+    <header class="header">
+      <div class="header_text">
+        <div class="header_greeting">
+          <p class="greeting">Hola! 👋</p>
+        </div>
+        <div class="header_name">
+          <p class="name">I'm Juliana</p>
+        </div>
+        <div class="header_link link">
+          <a class="link-github" href="https://github.com/Lyashka">github.com/Lyashka</a>
+        </div>
+      </div>
+      <div class="header_avatar"></div>
     </header>
 
-    <main class="row mb-5 align-items-center">
-      <div class="col-12 main">
-        <div class="row justify-content-center introduction">
-          <div class="col-5">
-            <img src="./img/photo.jpg" class="img-thumbnail rounded-circle photo" alt="" role="presentation">
-            <p class="h3 name">Juliana Samoylenko</p>
-            <p class="position">Junior Frontend Developer</p>
-            <p class="age font-italic">22 years old</p>
-          </div>
-          <div class="col-5 information">
-            <p class="h3 text-center">Short information</p>
-            <div class="container mb-4">
-              <p class="h5">Courses</p>
-              <p>HTML/CSS - <a href="https://htmlacademy.ru/profile/id1040603">HTML Academy</a></p>
-              <p>JS - <a href="https://ru.hexlet.io/u/lyashka13">Hexlet</a></p>
-              </ul>
-            </div>
-            <div class="container mb-4">
-              <p class="h5">Education</p>
-              <p>Computer Science and Computer Facilities, Kazan 2016-2020</p>
-            </div>
-            <div class="container">
-              <p class="h5">Projects</p>
-              <p>Repositories - <a href="https://github.com/Lyashka">GitHub</a></p>
-            </div>
-          </div>
+    <main class="main">
+      <section class="main_short-information short-information">
+        <p class="short-information_title">I’m a JS & React developer</p>
+        <p class="short-information_sentence">For the last year, I’ve been continuously exploring
+          frontend development and by now I’ve reached a point where I feel confident in my skills.</p>
+        <p>I want to continue my professional growth in a place where
+          I can practice solving challenging problems, learn from experienced teammates and bring value
+          to the business.</p>
+      </section>
+
+      <nav class="nav">
+        <div class="nav_title">
+          <p>Take a look at</p>
         </div>
-        <div class="row">
-          <div class="container">
-            <div class="col-md-auto about">
-              <p class="h5 mb-3">About projects</p>
-              <p>For the last year I have been intensively engaged in front-end development. Basic tools:
-                HTML, CSS, JS, React, Git, Unit Testing.<br/>
-                Methodology: BEM, OOP, SOLID, FP, TDD.<br/>
-                Created a nodeJS application <a href="https://github.com/Lyashka/TickTackToe-TDD">TicTacToe</a>
-                for mastering TDD methodology.<br/>
-                Developed applications in React:<br/>
-                1) <a href="https://github.com/Lyashka/TicTacToeReact">TicTacToe</a> - learned basic concepts of
-                React, Virtual DOM, props, state<br/>
-                2) <a href="https://github.com/Lyashka/weatherApp">WeatherApp</a> - worked with API requests<br/>
-                Created an application <a href="https://github.com/Lyashka/StaffMonitoring">StaffMonitoring</a>
-                to track the movement of employees around the enterprise using nodeJS, TwoJS,
-                Firebase, Git, Unit Testing, BEM, SOLID. The application has its own component system,
-                similar to React.<br/>
-                I'm currently working on a <a href="https://github.com/Lyashka/Housework_Todoer">React project</a>
-                for a deeper study of the framework.
-              </p>
-            </div>
-          </div>
+        <div class="nav_chapters chapters">
+          <a class="chapters_item" href="#">— My Story</a>
+          <a class="chapters_item" href="#">— Projects I’ve built</a>
+          <a class="chapters_item" href="#">— What I’m doing now</a>
+          <a class="chapters_item" href="#">— or Connect with me</a>
         </div>
+      </nav>
     </main>
 
-    <footer class="row footer justify-content-end">
-      <p class="font-weight-bold mr-4">Contact</p>
-      <p class="mr-4">Phone: +7 (960) 054 85 16</p>
-      <p>Email: iuliana9864@gmail.com</p>
+    <footer class="footer">
     </footer>
   </div>
+
 </body>
 
 </html>
