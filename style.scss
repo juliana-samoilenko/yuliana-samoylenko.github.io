@@ -652,6 +652,134 @@ ul {
   color: #636363;
 }
 
+.main_now {
+  @include flex-col();
+}
+
+.now {}
+
+.now_title {
+  font-size: 2em;
+}
+
+.font-purple {
+  color:#686DCF;
+}
+
+.now_introduce {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.now_sentence {
+  margin: 0.5em 0;
+}
+
+.now_Housework-Todoer {
+  @include flex-col();
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.Housework-Todoer {}
+
+.Housework-Todoer_screen {
+  width: 370px;
+  height: 185px;
+  background-image: url(./img/Staff_Monitoring.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.Housework-Todoer_link {
+  @include flex-row();
+}
+
+.Housework-Todoer_github {
+  @include flex-row();
+  justify-content: flex-start;
+  padding: 5px 0px 5px 15px;
+  width: 50%;
+  background-image: url(./img/github_white.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top 50%;
+  color: #FFFFFF;
+  background-color: #333333;
+
+  &:active, &:visited {
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.Housework-Todoer_netlify {
+  @include flex-row();
+  justify-content: flex-start;
+  padding: 5px 0px 5px 15px;
+  width: 50%;
+  background-image: url(./img/purple_link.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top 50%;
+  color: #686DCF;
+  background-color: #DBDDFB;
+
+  &:active, &:visited {
+    color: #686DCF;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.Housework-Todoer_description {
+  @include flex-col();
+  padding: 15px 10px;
+}
+
+.Housework-Todoer_title {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.Housework-Todoer_short-information {
+  color: #636363;
+  margin-bottom: 10px;
+}
+
+.Housework-Todoer_subtitle {
+  font-size: 0.9em;
+  color: #9296EC;
+}
+
+.Housework-Todoer_tech-stack {
+  color: #636363;
+}
+
+.now_conclusion {
+  margin: 0.5em 0 100px 0;
+}
+
+.now_subtitle {
+  margin-bottom: 90px;
+}
+
+.subtitle-company {}
+
+.subtitle-company_title {
+  font-size: 2em;
+}
+
+.subtitle-company_sentence {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
 .footer {
   flex: 0 0 auto;
 }
