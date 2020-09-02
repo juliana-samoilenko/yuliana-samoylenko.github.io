@@ -42,23 +42,23 @@
         </div>
         <div class="nav_chapters chapters">
           <a class="chapters_item" href="#my-story">— My Story</a>
-          <a class="chapters_item" href="#">— Projects I’ve built</a>
+          <a class="chapters_item" href="#projects">— Projects I’ve built</a>
           <a class="chapters_item" href="#">— What I’m doing now</a>
           <a class="chapters_item" href="#">— or Connect with me</a>
         </div>
       </nav>
 
-      <div class="progress-bar">
-        <div class="progress-bar_no-active"></div>
-        <div class="progress-bar_no-active"></div>
-        <div class="progress-bar_no-active"></div>
-        <div class="progress-bar_no-active"></div>
-      </div>
-
       <section class="main_my-story my-story">
 
+        <div class="progress-bar">
+          <div class="progress-bar_no-active"></div>
+          <div class="progress-bar_no-active"></div>
+          <div class="progress-bar_no-active"></div>
+          <div class="progress-bar_no-active"></div>
+        </div>
+
         <div class="my-story_title">
-          <h4 class="font-weight"><a name="my-story">My story</a></h4>
+          <h4 class="font-weight-title"><a name="my-story">My story</a></h4>
         </div>
         <div class="my-story_introduce">
           <p class="my-story_sentence">I’ve grown up in Toliatty where we do many things differently.
@@ -81,7 +81,7 @@
             <h5>A year ago</h5>
           </div>
           <p class="subtitle-a-year-ago_sentence">I started diving into the fundamentals of
-            <span class="font-weight">HTML, CSS and JS</span> going over HTMLAcademy courses.</p>
+            <span class="font-weight-text">HTML, CSS and JS</span> going over HTMLAcademy courses.</p>
           <p class="subtitle-a-year-ago_sentence">I’ve had a lot of fun working on Academy’s tasks and eventually
             I realised that I have enough skills to try out more difficult UI challenges.</p>
         </div>
@@ -100,9 +100,9 @@
           <p class="subtitle-frontloops_sentence">Frontloops challenges made me confident in my fundamental
             skills and helped progress further:</p>
           <ul class="subtitle-frontloops_sentence_items">
-            <li>— I mastered laying out elements using <span class="font-weight">Flex</span></li>
-            <li>— Learned how to manage <span class="font-weight">CSS styles using BEM</span></li>
-            <li>— Started using <span class="font-weight">Git</span> and in my daily practice</li>
+            <li>— I mastered laying out elements using <span class="font-weight-text">Flex</span></li>
+            <li>— Learned how to manage <span class="font-weight-text">CSS styles using BEM</span></li>
+            <li>— Started using <span class="font-weight-text">Git</span> and in my daily practice</li>
           </ul>
           <p class="subtitle-frontloops_sentence">After frontloops I was better at solving UI challenges
             with HTML & CSS, but I realised that my JS knowledge is still not deep enough.</p>
@@ -128,13 +128,13 @@
           <p class="subtitle-hexlet_sentence">But exactly this <span class="font-italic">hell-ish</span> nature
             of Hexlet forced me to learn a lot of important things:</p>
           <ul class="subtitle-hexlet_sentence_items">
-            <li>— Concepts from functional paradigm (e.g. what are <span class="font-weight">side effects</span>
-              or <span class="font-weight">pure functions</span>)</li>
-            <li>— <span class="font-weight">OOP</span> paradigm and practiced with
-              <span class="font-weight">classes</span></li>
-            <li>— <span class="font-weight">Abstractions</span> and popular
-              <span class="font-weight">design patterns</span> (e.g. PubSub, MVC)</li>
-            <li>— <span class="font-weight">Async nature of JS: event loop, timers and promises</span></li>
+            <li>— Concepts from functional paradigm (e.g. what are <span class="font-weight-text">side effects</span>
+              or <span class="font-weight-text">pure functions</span>)</li>
+            <li>— <span class="font-weight-text">OOP</span> paradigm and practiced with
+              <span class="font-weight-text">classes</span></li>
+            <li>— <span class="font-weight-text">Abstractions</span> and popular
+              <span class="font-weight-text">design patterns</span> (e.g. PubSub, MVC)</li>
+            <li>— <span class="font-weight-text">Async nature of JS: event loop, timers and promises</span></li>
           </ul>
         </div>
 
@@ -143,6 +143,81 @@
           <div class="progress-bar_active"></div>
           <div class="progress-bar_active"></div>
           <div class="progress-bar_active"></div>
+        </div>
+      </section>
+
+      <section class="main_projects projects">
+        <div class="projects_title">
+          <h4 class="font-weight-title"><a name="projects">Using JS witchcraft I’ve built projects ✨</a></h4>
+        </div>
+        <div class="projects_introduce">
+          <p class="projects_sentence">While still going through Hexlet, I started taking some time to work on
+            practical projects under tutelage of my mentor.</p>
+          <p class="projects_sentence">During those projects, I got used to the
+            <span class="font-weight-text">Github workflow</span> used by development teams.</p>
+          <p class="projects_sentence">We also had a lot of <span class="font-weight-text">tech discussions</span>
+            and <span class="font-weight-text">code reviews</span> at that time, in which my mentor shared
+            his experience and professional knowledge with me.</p>
+        </div>
+
+        <div class="projects_weather-app weather-app">
+          <div class="weather-app_screen"></div>
+          <div class="weather-app_link">
+            <a class="weather-app_github" href="https://github.com/Lyashka/weatherApp">See on GitHub</a>
+            <a class="weather-app_netlify" href="https://cranky-northcutt-c1dd23.netlify.app/">See on Netlify</a>
+          </div>
+          <div class="weather-app_description">
+            <p class="weather-app_title font-weight-title">Weather App</p>
+            <p class="weather-app_short-information">Small Vanilla JS application displaying the weather
+              depending on your Location</p>
+            <p class="weather-app_subtitle">Tech stack</p>
+            <p class="weather-app_tech-stack">#JS, #FetchAPI, #OpenWeatherMapAPI</p>
+          </div>
+        </div>
+
+        <div class="projects_TTT-TDD TTT-TDD">
+          <div class="TTT-TDD_screen"></div>
+          <div class="TTT-TDD_link">
+            <a class="TTT-TDD_github" href="https://github.com/Lyashka/TickTackToe-TDD">See on GitHub</a>
+            <a class="TTT-TDD_netlify" href="https://priceless-cori-a20f9d.netlify.app/">See on Netlify</a>
+          </div>
+          <div class="TTT-TDD_description">
+            <p class="TTT-TDD_title font-weight-title">Tick Tack Toe TDD</p>
+            <p class="TTT-TDD_short-information">Vanilla JS application built using TDD mythology</p>
+            <p class="TTT-TDD_subtitle">Tech stack</p>
+            <p class="TTT-TDD_tech-stack">#JS, #Webpack, #Mocha, #Sinon, #TestDrivenDevelopment</p>
+          </div>
+        </div>
+
+        <div class="projects_TTT-react TTT-react">
+          <div class="TTT-react_screen"></div>
+          <div class="TTT-react_link">
+            <a class="TTT-react_github" href="https://github.com/Lyashka/TicTacToeReact">See on GitHub</a>
+            <a class="TTT-react_netlify" href="https://stoic-minsky-aaae81.netlify.app/">See on Netlify</a>
+          </div>
+          <div class="TTT-react_description">
+            <p class="TTT-react_title font-weight-title">Tick Tack Toe React</p>
+            <p class="TTT-react_short-information">React application based on official tutorial from React
+              documentation</p>
+            <p class="TTT-react_subtitle">Tech stack</p>
+            <p class="TTT-react_tech-stack">#CreateReactApp, #React</p>
+          </div>
+        </div>
+
+        <div class="projects_Staff-Monitoring Staff-Monitoring">
+          <div class="Staff-Monitoring_screen"></div>
+          <div class="Staff-Monitoring_link">
+            <a class="Staff-Monitoring_github" href="https://github.com/Lyashka/StaffMonitoring">See on GitHub</a>
+            <a class="Staff-Monitoring_netlify" href="https://friendly-noyce-b06412.netlify.app/">See on Netlify</a>
+          </div>
+          <div class="Staff-Monitoring_description">
+            <p class="Staff-Monitoring_title font-weight-title">Staff Monitoring</p>
+            <p class="Staff-Monitoring_short-information">Vanilla JS applications based on Canvas API for monitoring
+              employees working in a manufacturing plant</p>
+            <p class="Staff-Monitoring_subtitle">Tech stack</p>
+            <p class="Staff-Monitoring_tech-stack">#JS, #TwoJS, #Jest, #Parcel, #GoogleCloudFirestore,
+              #TelegramBotAPI, #SOLID</p>
+          </div>
         </div>
       </section>
     </main>
