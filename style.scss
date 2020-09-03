@@ -43,6 +43,18 @@ ul {
   list-style-type: none;
 }
 
+.font-weight-title {
+  font-weight: 500;
+}
+
+.font-weight-text {
+  font-weight: 700;
+}
+
+.font-purple {
+  color:#686DCF;
+}
+
 .container {
   @include flex-col();
   min-height: 100%;
@@ -228,14 +240,6 @@ ul {
 
 .my-story__title {
   font-size: 2em;
-}
-
-.font-weight-title {
-  font-weight: 500;
-}
-
-.font-weight-text {
-  font-weight: 700;
 }
 
 .my-story__introduce {
@@ -703,10 +707,6 @@ ul {
 
 .now_title {
   font-size: 2em;
-}
-
-.font-purple {
-  color:#686DCF;
 }
 
 .now_introduce {
