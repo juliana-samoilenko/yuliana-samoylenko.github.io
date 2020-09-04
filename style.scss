@@ -871,6 +871,14 @@ ul {
   width: 120px;
   color: #686DCF;
   margin-bottom: 5px;
+
+  &:hover, &:link, &:active, &:visited {
+    color: #686DCF;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .contact_email {
@@ -878,6 +886,14 @@ ul {
   padding: 5px;
   width: 210px;
   color: #686DCF;
+
+  &:hover, &:link, &:active, &:visited {
+    color: #686DCF;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 640px) {
