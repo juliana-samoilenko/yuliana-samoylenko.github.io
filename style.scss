@@ -333,22 +333,22 @@ ul {
 
 }
 
-.main_projects {
+.main__projects {
   @include flex-col();
 }
 
 .projects {}
 
-.projects_title {
+.projects__title {
   font-size: 2em;
 }
 
-.projects_introduce {
+.projects__introduce {
   font-size: 1.1em;
   margin-bottom: 60px;
 }
 
-.projects_sentence {
+.projects__sentence {
   margin: 0.5em 0;
 }
 
@@ -358,7 +358,7 @@ ul {
   justify-content: center;
 }
 
-.projects_weather-app {
+.projects__weather-app {
   @include flex-col();
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -368,7 +368,7 @@ ul {
 
 .weather-app {}
 
-.weather-app_screen {
+.weather-app__screen {
   width: 370px;
   height: 185px;
   background-image: url(./img/weather_app.svg);
@@ -378,11 +378,11 @@ ul {
   border-top-right-radius: 8px;
 }
 
-.weather-app_link {
+.weather-app__link {
   @include flex-row();
 }
 
-.weather-app_github {
+.weather-app__github {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -402,7 +402,7 @@ ul {
   }
 }
 
-.weather-app_netlify {
+.weather-app__netlify {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -422,31 +422,31 @@ ul {
   }
 }
 
-.weather-app_description {
+.weather-app__description {
   @include flex-col();
   padding: 15px 10px;
 }
 
-.weather-app_title {
+.weather-app__title {
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
-.weather-app_short-information {
+.weather-app__short-information {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.weather-app_subtitle {
+.weather-app__subtitle {
   font-size: 0.9em;
   color: #9296EC;
 }
 
-.weather-app_tech-stack {
+.weather-app__tech-stack {
   color: #636363;
 }
 
-.projects_TTT-TDD {
+.projects__TTT-TDD {
   @include flex-col();
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -456,7 +456,7 @@ ul {
 
 .TTT-TDD {}
 
-.TTT-TDD_screen {
+.TTT-TDD__screen {
   width: 370px;
   height: 185px;
   background-image: url(./img/TTT_TTD.svg);
@@ -466,11 +466,11 @@ ul {
   border-top-right-radius: 8px;
 }
 
-.TTT-TDD_link {
+.TTT-TDD__link {
   @include flex-row();
 }
 
-.TTT-TDD_github {
+.TTT-TDD__github {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -490,7 +490,7 @@ ul {
   }
 }
 
-.TTT-TDD_netlify {
+.TTT-TDD__netlify {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -510,31 +510,31 @@ ul {
   }
 }
 
-.TTT-TDD_description {
+.TTT-TDD__description {
   @include flex-col();
   padding: 15px 10px;
 }
 
-.TTT-TDD_title {
+.TTT-TDD__title {
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
-.TTT-TDD_short-information {
+.TTT-TDD__short-information {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.TTT-TDD_subtitle {
+.TTT-TDD__subtitle {
   font-size: 0.9em;
   color: #9296EC;
 }
 
-.TTT-TDD_tech-stack {
+.TTT-TDD__tech-stack {
   color: #636363;
 }
 
-.projects_TTT-react {
+.projects__TTT-react {
   @include flex-col();
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -544,7 +544,7 @@ ul {
 
 .TTT-react {}
 
-.TTT-react_screen {
+.TTT-react__screen {
   width: 370px;
   height: 185px;
   background-image: url(./img/TTT_react.svg);
@@ -554,11 +554,11 @@ ul {
   border-top-right-radius: 8px;
 }
 
-.TTT-react_link {
+.TTT-react__link {
   @include flex-row();
 }
 
-.TTT-react_github {
+.TTT-react__github {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -578,7 +578,7 @@ ul {
   }
 }
 
-.TTT-react_netlify {
+.TTT-react__netlify {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -598,31 +598,31 @@ ul {
   }
 }
 
-.TTT-react_description {
+.TTT-react__description {
   @include flex-col();
   padding: 15px 10px;
 }
 
-.TTT-react_title {
+.TTT-react__title {
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
-.TTT-react_short-information {
+.TTT-react__short-information {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.TTT-react_subtitle {
+.TTT-react__subtitle {
   font-size: 0.9em;
   color: #9296EC;
 }
 
-.TTT-react_tech-stack {
+.TTT-react__tech-stack {
   color: #636363;
 }
 
-.projects_Staff-Monitoring {
+.projects__Staff-Monitoring {
   @include flex-col();
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -632,7 +632,7 @@ ul {
 
 .Staff-Monitoring {}
 
-.Staff-Monitoring_screen {
+.Staff-Monitoring__screen {
   width: 370px;
   height: 185px;
   background-image: url(./img/Staff_Monitoring.svg);
@@ -642,11 +642,11 @@ ul {
   border-top-right-radius: 8px;
 }
 
-.Staff-Monitoring_link {
+.Staff-Monitoring__link {
   @include flex-row();
 }
 
-.Staff-Monitoring_github {
+.Staff-Monitoring__github {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -666,7 +666,7 @@ ul {
   }
 }
 
-.Staff-Monitoring_netlify {
+.Staff-Monitoring__netlify {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -686,60 +686,60 @@ ul {
   }
 }
 
-.Staff-Monitoring_description {
+.Staff-Monitoring__description {
   @include flex-col();
   padding: 15px 10px;
 }
 
-.Staff-Monitoring_title {
+.Staff-Monitoring__title {
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
-.Staff-Monitoring_short-information {
+.Staff-Monitoring__short-information {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.Staff-Monitoring_subtitle {
+.Staff-Monitoring__subtitle {
   font-size: 0.9em;
   color: #9296EC;
 }
 
-.Staff-Monitoring_tech-stack {
+.Staff-Monitoring__tech-stack {
   color: #636363;
 }
 
-.main_now {
+.main__now {
   @include flex-col();
 }
 
 .now {}
 
-.now_container {
+.now__container {
   @include flex-row();
   flex-wrap: wrap;
 }
 
-.now_description {
+.now__description {
   @include flex-col();
   width: 370px;
 }
 
-.now_title {
+.now__title {
   font-size: 2em;
 }
 
-.now_introduce {
+.now__introduce {
   font-size: 1.1em;
   margin-bottom: 20px;
 }
 
-.now_sentence {
+.now__sentence {
   margin: 0.5em 0;
 }
 
-.now_Housework-Todoer {
+.now__Housework-Todoer {
   @include flex-col();
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -749,7 +749,7 @@ ul {
 
 .Housework-Todoer {}
 
-.Housework-Todoer_screen {
+.Housework-Todoer__screen {
   width: 370px;
   height: 185px;
   background-image: url(./img/housework_todoer.svg);
@@ -759,11 +759,11 @@ ul {
   border-top-right-radius: 8px;
 }
 
-.Housework-Todoer_link {
+.Housework-Todoer__link {
   @include flex-row();
 }
 
-.Housework-Todoer_github {
+.Housework-Todoer__github {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -783,7 +783,7 @@ ul {
   }
 }
 
-.Housework-Todoer_netlify {
+.Housework-Todoer__netlify {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -803,60 +803,60 @@ ul {
   }
 }
 
-.Housework-Todoer_description {
+.Housework-Todoer__description {
   @include flex-col();
   padding: 15px 10px;
 }
 
-.Housework-Todoer_title {
+.Housework-Todoer__title {
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
-.Housework-Todoer_short-information {
+.Housework-Todoer__short-information {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.Housework-Todoer_subtitle {
+.Housework-Todoer__subtitle {
   font-size: 0.9em;
   color: #9296EC;
 }
 
-.Housework-Todoer_tech-stack {
+.Housework-Todoer__tech-stack {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.Housework-Todoer_sentence {}
+.Housework-Todoer__sentence {}
 
-.now_subtitle {
+.now__subtitle {
   margin-bottom: 90px;
 }
 
 .subtitle-company {}
 
-.subtitle-company_title {
+.subtitle-company__title {
   font-size: 2em;
 }
 
-.subtitle-company_sentence {
+.subtitle-company__sentence {
   font-size: 1.1em;
   margin: 0.5em 0;
 }
 
-.main_contact {
+.main__contact {
  @include flex-col();
  margin-bottom: 80px;
 }
 
 .contact {}
 
-.contact_title {
+.contact__title {
   font-size: 2em;
 }
 
-.contact_sentence {
+.contact__sentence {
   font-size: 1.1em;
   margin: 0.5em 0;
 }
@@ -865,7 +865,7 @@ ul {
   margin-right: 10px;
 }
 
-.contact_telegram {
+.contact__telegram {
   @include flex-row();
   padding: 5px;
   width: 120px;
@@ -881,7 +881,7 @@ ul {
   }
 }
 
-.contact_email {
+.contact__email {
   @include flex-row();
   padding: 5px;
   width: 210px;
@@ -930,7 +930,7 @@ ul {
   }
 
   .my-story__one-col {
-    width: 45%;
+    width: 46%;
   }
 
   .my-story__two-col {
@@ -949,31 +949,32 @@ ul {
     margin-bottom: 50px;
   }
 
-  .projects_weather-app {
+  .projects__weather-app {
     margin-right: 5em;
     margin-bottom: 0;
   }
 
-  .projects_TTT-TDD {
+  .projects__TTT-TDD {
     margin-bottom: 0;
   }
 
-  .projects_TTT-react {
+  .projects__TTT-react {
     margin-right: 5em;
     margin-bottom: 0;
+    height: min-content;
   }
 
-  .projects_Staff-Monitoring {
+  .projects__Staff-Monitoring {
     margin-bottom: 0;
   }
 
-  .now_container {
+  .now__container {
     flex-wrap: nowrap;
     width: max-content;
     margin-bottom: 50px;
   }
 
-  .now_description {
+  .now__description {
     margin-right: 5em;
   }
 }
