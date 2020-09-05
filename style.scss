@@ -146,7 +146,6 @@ ul {
 
 .main {
   @include flex-col();
-  padding: 0 5%;
   flex: 1 0 auto;
 }
 
@@ -361,34 +360,36 @@ ul {
 .projects__container {
   @include flex-row();
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.projects__weather-app {
+.projects__project {
   @include flex-col();
+  flex: 0 1 calc(25% - 1em);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   margin-bottom: 50px;
-  width: 370px;
 }
 
-.weather-app {}
+.project {}
 
-.weather-app__screen {
-  width: 370px;
-  height: 185px;
-  background-image: url(./img/weather_app.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+.project__illustration {
+  @include flex-row();
+
+}
+
+.project__image {
+  object-fit: contain;
+  max-width: 370px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-.weather-app__link {
+.project__link {
   @include flex-row();
 }
 
-.weather-app__github {
+.project__github {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -408,7 +409,7 @@ ul {
   }
 }
 
-.weather-app__netlify {
+.project__netlify {
   @include flex-row();
   justify-content: flex-start;
   padding: 5px 0px 5px 15px;
@@ -428,291 +429,27 @@ ul {
   }
 }
 
-.weather-app__description {
+.project__description {
   @include flex-col();
   padding: 15px 10px;
 }
 
-.weather-app__title {
+.project__title {
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
-.weather-app__short-information {
+.project__short-information {
   color: #636363;
   margin-bottom: 10px;
 }
 
-.weather-app__subtitle {
+.project__subtitle {
   font-size: 0.9em;
   color: #9296EC;
 }
 
-.weather-app__tech-stack {
-  color: #636363;
-}
-
-.projects__TTT-TDD {
-  @include flex-col();
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  margin-bottom: 50px;
-  width: 370px;
-}
-
-.TTT-TDD {}
-
-.TTT-TDD__screen {
-  width: 370px;
-  height: 185px;
-  background-image: url(./img/TTT_TTD.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.TTT-TDD__link {
-  @include flex-row();
-}
-
-.TTT-TDD__github {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/github_white.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #FFFFFF;
-  background-color: #333333;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #FFFFFF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.TTT-TDD__netlify {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/purple_link.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #686DCF;
-  background-color: #DBDDFB;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #686DCF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.TTT-TDD__description {
-  @include flex-col();
-  padding: 15px 10px;
-}
-
-.TTT-TDD__title {
-  font-size: 1.1em;
-  margin-bottom: 5px;
-}
-
-.TTT-TDD__short-information {
-  color: #636363;
-  margin-bottom: 10px;
-}
-
-.TTT-TDD__subtitle {
-  font-size: 0.9em;
-  color: #9296EC;
-}
-
-.TTT-TDD__tech-stack {
-  color: #636363;
-}
-
-.projects__TTT-react {
-  @include flex-col();
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  margin-bottom: 50px;
-  width: 370px;
-}
-
-.TTT-react {}
-
-.TTT-react__screen {
-  width: 370px;
-  height: 185px;
-  background-image: url(./img/TTT_react.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.TTT-react__link {
-  @include flex-row();
-}
-
-.TTT-react__github {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/github_white.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #FFFFFF;
-  background-color: #333333;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #FFFFFF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.TTT-react__netlify {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/purple_link.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #686DCF;
-  background-color: #DBDDFB;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #686DCF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.TTT-react__description {
-  @include flex-col();
-  padding: 15px 10px;
-}
-
-.TTT-react__title {
-  font-size: 1.1em;
-  margin-bottom: 5px;
-}
-
-.TTT-react__short-information {
-  color: #636363;
-  margin-bottom: 10px;
-}
-
-.TTT-react__subtitle {
-  font-size: 0.9em;
-  color: #9296EC;
-}
-
-.TTT-react__tech-stack {
-  color: #636363;
-}
-
-.projects__Staff-Monitoring {
-  @include flex-col();
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  margin-bottom: 150px;
-  width: 370px;
-}
-
-.Staff-Monitoring {}
-
-.Staff-Monitoring__screen {
-  width: 370px;
-  height: 185px;
-  background-image: url(./img/Staff_Monitoring.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.Staff-Monitoring__link {
-  @include flex-row();
-}
-
-.Staff-Monitoring__github {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/github_white.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #FFFFFF;
-  background-color: #333333;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #FFFFFF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.Staff-Monitoring__netlify {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/purple_link.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #686DCF;
-  background-color: #DBDDFB;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #686DCF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.Staff-Monitoring__description {
-  @include flex-col();
-  padding: 15px 10px;
-}
-
-.Staff-Monitoring__title {
-  font-size: 1.1em;
-  margin-bottom: 5px;
-}
-
-.Staff-Monitoring__short-information {
-  color: #636363;
-  margin-bottom: 10px;
-}
-
-.Staff-Monitoring__subtitle {
-  font-size: 0.9em;
-  color: #9296EC;
-}
-
-.Staff-Monitoring__tech-stack {
+.project__tech-stack {
   color: #636363;
 }
 
@@ -725,6 +462,8 @@ ul {
 .now__container {
   @include flex-row();
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .now__description {
@@ -747,96 +486,15 @@ ul {
 
 .now__Housework-Todoer {
   @include flex-col();
+  flex: 0 1 calc(25% - 1em);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  width: 370px;
-  margin-bottom: 50px;
 }
-
-.Housework-Todoer {}
-
-.Housework-Todoer__screen {
-  width: 370px;
-  height: 185px;
-  background-image: url(./img/housework_todoer.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.Housework-Todoer__link {
-  @include flex-row();
-}
-
-.Housework-Todoer__github {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/github_white.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #FFFFFF;
-  background-color: #333333;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #FFFFFF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.Housework-Todoer__netlify {
-  @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
-  width: 50%;
-  background-image: url(./img/purple_link.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
-  color: #686DCF;
-  background-color: #DBDDFB;
-
-  &:hover, &:link, &:active, &:visited {
-    color: #686DCF;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.Housework-Todoer__description {
-  @include flex-col();
-  padding: 15px 10px;
-}
-
-.Housework-Todoer__title {
-  font-size: 1.1em;
-  margin-bottom: 5px;
-}
-
-.Housework-Todoer__short-information {
-  color: #636363;
-  margin-bottom: 10px;
-}
-
-.Housework-Todoer__subtitle {
-  font-size: 0.9em;
-  color: #9296EC;
-}
-
-.Housework-Todoer__tech-stack {
-  color: #636363;
-  margin-bottom: 10px;
-}
-
-.Housework-Todoer__sentence {}
 
 .now__subtitle {
+  @include flex-row();
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 90px;
 }
 
@@ -945,38 +603,29 @@ ul {
     margin-right: 5em;
   }
 
-  .projects__container {
-    flex-wrap: nowrap;
-    width: min-content;
-    margin-bottom: 50px;
-  }
-
-  .projects__weather-app {
-    margin-right: 5em;
-    margin-bottom: 0;
-  }
-
-  .projects__TTT-TDD {
-    margin-bottom: 0;
-  }
-
-  .projects__TTT-react {
-    margin-right: 5em;
-    margin-bottom: 0;
-    height: min-content;
-  }
-
-  .projects__Staff-Monitoring {
-    margin-bottom: 0;
+  .projects__project {
+    flex: 0 1 calc(50% - 1em);
   }
 
   .now__container {
-    flex-wrap: nowrap;
-    width: max-content;
-    margin-bottom: 50px;
+    justify-content: space-between;
   }
 
-  .now__description {
-    margin-right: 5em;
+  .now__subtitle  {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .projects__project {
+    flex: 0 1 calc(25% - 1em);
+  }
+
+  .now__container {
+    justify-content: space-between;
+  }
+
+  .now__subtitle  {
+    justify-content: flex-start;
   }
 }

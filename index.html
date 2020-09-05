@@ -12,25 +12,23 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__background">
-        <p class="font-weight-title">Frontend developer</p>
-      </div>
+
       <div class="header__content">
-      <div class="header__text">
-        <div class="header__greeting">
-          <p class="greeting">Hola! 👋</p>
+        <div class="header__text">
+          <div class="header__greeting">
+            <p class="greeting">Hola! 👋</p>
+          </div>
+          <div class="header__name">
+            <p class="name">I'm Juliana</p>
+          </div>
+          <div class="header__link link">
+            <a class="link-github" href="https://github.com/Lyashka">github.com/Lyashka</a>
+          </div>
         </div>
-        <div class="header__name">
-          <p class="name">I'm Juliana</p>
-        </div>
-        <div class="header__link link">
-          <a class="link-github" href="https://github.com/Lyashka">github.com/Lyashka</a>
-        </div>
+        <figure class="header__avatar avatar">
+          <img class="avatar__photo" src="./img/photo.jpg">
+        </figure>
       </div>
-      <figure class="header__avatar avatar">
-        <img class="avatar__photo" src="./img/photo.jpg">
-      </figure>
-    </div>
     </header>
 
     <main class="main">
@@ -141,10 +139,10 @@
           <p class="subtitle-hexlet__sentence">Hexlet should be called <span class="font-italic">Hell</span>xlet.
             So many tough challenges that sometimes may take days to solve.</p>
 
-            <a class="subtitle-hexlet__link link-hexlet" href="https://ru.hexlet.io/u/lyashka13">
-              <p class="link-hexlet__title">My Hexlet profile</p>
-              <img class="link-hexlet__img" src="img/purple_link.svg">
-            </a>
+          <a class="subtitle-hexlet__link link-hexlet" href="https://ru.hexlet.io/u/lyashka13">
+            <p class="link-hexlet__title">My Hexlet profile</p>
+            <img class="link-hexlet__img" src="img/purple_link.svg">
+          </a>
           <p class="subtitle-hexlet__sentence">But exactly this <span class="font-italic">hell-ish</span> nature
             of Hexlet forced me to learn a lot of important things:</p>
           <ul class="subtitle-hexlet__sentence-items">
@@ -181,64 +179,78 @@
         </div>
 
         <div class="projects__container">
-          <div class="projects__weather-app weather-app">
-            <div class="weather-app__screen"></div>
-            <div class="weather-app__link">
-              <a class="weather-app__github" href="https://github.com/Lyashka/weatherApp">See on GitHub</a>
-              <a class="weather-app__netlify" href="https://cranky-northcutt-c1dd23.netlify.app/">See on Netlify</a>
+          <div class="projects__project project">
+            <div class="project__illustration">
+              <img class="project__image"
+              src="./img/weather_app@3x.png"
+              alt="Weather app project">
             </div>
-            <div class="weather-app__description">
-              <p class="weather-app__title font-weight-title">Weather App</p>
-              <p class="weather-app__short-information">Small Vanilla JS application displaying the weather
+            <div class="project__link">
+              <a class="project__github" href="https://github.com/Lyashka/weatherApp">See on GitHub</a>
+              <a class="project__netlify" href="https://cranky-northcutt-c1dd23.netlify.app/">See on Netlify</a>
+            </div>
+            <div class="project__description">
+              <p class="project__title font-weight-title">Weather App</p>
+              <p class="project__short-information">Small Vanilla JS application displaying the weather
                 depending on your Location</p>
-              <p class="weather-app__subtitle font-weight-text">Tech stack</p>
-              <p class="weather-app__tech-stack">#JS, #FetchAPI, #OpenWeatherMapAPI</p>
+              <p class="project__subtitle font-weight-text">Tech stack</p>
+              <p class="project__tech-stack">#JS, #FetchAPI, #OpenWeatherMapAPI</p>
             </div>
           </div>
 
-          <div class="projects__TTT-TDD TTT-TDD">
-            <div class="TTT-TDD__screen"></div>
-            <div class="TTT-TDD__link">
-              <a class="TTT-TDD__github" href="https://github.com/Lyashka/TickTackToe-TDD">See on GitHub</a>
-              <a class="TTT-TDD__netlify" href="https://priceless-cori-a20f9d.netlify.app/">See on Netlify</a>
+          <div class="projects__project project">
+            <div class="project__illustration">
+              <img class="project__image"
+              src="./img/TTT-TDD@3x.png"
+              alt="Tic Tack Toe (Test Driven Development) project">
             </div>
-            <div class="TTT-TDD__description">
-              <p class="TTT-TDD__title font-weight-title">Tick Tack Toe TDD</p>
-              <p class="TTT-TDD__short-information">Vanilla JS application built using TDD mythology</p>
-              <p class="TTT-TDD__subtitle font-weight-text">Tech stack</p>
-              <p class="TTT-TDD__tech-stack">#JS, #Webpack, #Mocha, #Sinon, #TestDrivenDevelopment</p>
+            <div class="project__link">
+              <a class="project__github" href="https://github.com/Lyashka/TickTackToe-TDD">See on GitHub</a>
+              <a class="project__netlify" href="https://priceless-cori-a20f9d.netlify.app/">See on Netlify</a>
+            </div>
+            <div class="project__description">
+              <p class="project__title font-weight-title">Tick Tack Toe TDD</p>
+              <p class="project__short-information">Vanilla JS application built using TDD mythology</p>
+              <p class="project__subtitle font-weight-text">Tech stack</p>
+              <p class="project__tech-stack">#JS, #Webpack, #Mocha, #Sinon, #TestDrivenDevelopment</p>
             </div>
           </div>
-        </div>
 
-        <div class="projects__container">
-          <div class="projects__TTT-react TTT-react">
-            <div class="TTT-react__screen"></div>
-            <div class="TTT-react__link">
-              <a class="TTT-react__github" href="https://github.com/Lyashka/TicTacToeReact">See on GitHub</a>
-              <a class="TTT-react__netlify" href="https://stoic-minsky-aaae81.netlify.app/">See on Netlify</a>
+          <div class="projects__project project">
+            <div class="project__illustration">
+              <img class="project__image"
+              src="./img/TTT_React@3x.png"
+              alt="Tic Tack Toe (React) project">
             </div>
-            <div class="TTT-react__description">
-              <p class="TTT-react__title font-weight-title">Tick Tack Toe React</p>
-              <p class="TTT-react__short-information">React application based on official tutorial from React
+            <div class="project__link">
+              <a class="project__github" href="https://github.com/Lyashka/TicTacToeReact">See on GitHub</a>
+              <a class="project__netlify" href="https://stoic-minsky-aaae81.netlify.app/">See on Netlify</a>
+            </div>
+            <div class="project__description">
+              <p class="project__title font-weight-title">Tick Tack Toe React</p>
+              <p class="project__short-information">React application based on official tutorial from React
                 documentation</p>
-              <p class="TTT-react__subtitle font-weight-text">Tech stack</p>
-              <p class="TTT-react__tech-stack">#CreateReactApp, #React</p>
+              <p class="project__subtitle font-weight-text">Tech stack</p>
+              <p class="project__tech-stack">#CreateReactApp, #React</p>
             </div>
           </div>
 
-          <div class="projects__Staff-Monitoring Staff-Monitoring">
-            <div class="Staff-Monitoring__screen"></div>
-            <div class="Staff-Monitoring__link">
-              <a class="Staff-Monitoring__github" href="https://github.com/Lyashka/StaffMonitoring">See on GitHub</a>
-              <a class="Staff-Monitoring__netlify" href="https://friendly-noyce-b06412.netlify.app/">See on Netlify</a>
+          <div class="projects__project project">
+            <div class="project__illustration">
+              <img class="project__image"
+              src="./img/Staff_Monitoring@3px.png"
+              alt="Staff Monitoring project">
             </div>
-            <div class="Staff-Monitoring__description">
-              <p class="Staff-Monitoring__title font-weight-title">Staff Monitoring</p>
-              <p class="Staff-Monitoring__short-information">Vanilla JS applications based on Canvas API for monitoring
+            <div class="project__link">
+              <a class="project__github" href="https://github.com/Lyashka/StaffMonitoring">See on GitHub</a>
+              <a class="project__netlify" href="https://friendly-noyce-b06412.netlify.app/">See on Netlify</a>
+            </div>
+            <div class="project__description">
+              <p class="project__title font-weight-title">Staff Monitoring</p>
+              <p class="project__short-information">Vanilla JS applications based on Canvas API for monitoring
                 employees working in a manufacturing plant</p>
-              <p class="Staff-Monitoring__subtitle font-weight-text">Tech stack</p>
-              <p class="Staff-Monitoring__tech-stack">#JS, #TwoJS, #Jest, #Parcel, #GoogleCloudFirestore,
+              <p class="project__subtitle font-weight-text">Tech stack</p>
+              <p class="project__tech-stack">#JS, #TwoJS, #Jest, #Parcel, #GoogleCloudFirestore,
                 #TelegramBotAPI, #SOLID</p>
             </div>
           </div>
@@ -250,7 +262,7 @@
           <div class="now__description">
             <div class="now__title">
               <h4 class="font-weight-title f"><a name="now">What I’m doing
-                <span class="font-purple">now</span></a></h4>
+                  <span class="font-purple">now</span></a></h4>
             </div>
             <div class="now__introduce">
               <p class="now__sentence">Right now I’m going through a couple of things.</p>
@@ -259,21 +271,25 @@
             </div>
           </div>
 
-          <div class="now__Housework-Todoer">
-            <div class="Housework-Todoer__screen"></div>
-            <div class="Housework-Todoer__link">
-              <a class="Housework-Todoer__github" href="https://github.com/Lyashka/Housework_Todoer">See on GitHub</a>
-              <a class="Housework-Todoer__netlify" href="https://pensive-heisenberg-093927.netlify.app/">See on
+          <div class="now__Housework-Todoer project">
+            <div class="project__illustration">
+              <img class="project__image"
+              src="./img/Housework_Todoer@3x.png"
+              alt="Housework_Todoer project">
+            </div>
+            <div class="project__link">
+              <a class="project__github" href="https://github.com/Lyashka/Housework_Todoer">See on GitHub</a>
+              <a class="project__netlify" href="https://pensive-heisenberg-093927.netlify.app/">See on
                 Netlify</a>
             </div>
-            <div class="Housework-Todoer__description">
-              <p class="Housework-Todoer__title font-weight-title">Housework Todoer</p>
-              <p class="Housework-Todoer__short-information">React application for parents to encourage their
+            <div class="project__description">
+              <p class="project__title font-weight-title">Housework Todoer</p>
+              <p class="project__short-information">React application for parents to encourage their
                 kids to help with the housework</p>
-              <p class="Housework-Todoer__subtitle font-weight-text">Tech stack</p>
-              <p class="Housework-Todoer__tech-stack">#CreateReactApp, #React, #ReactRouter, #SCSS</p>
-              <p class="Housework-Todoer__sentence">I’m focusing on <span class="font-weight-text">improving
-                my skills of React and React ecosystem</span> for building interactive applications.</p>
+              <p class="project__subtitle font-weight-text">Tech stack</p>
+              <p class="project__tech-stack">#CreateReactApp, #React, #ReactRouter, #SCSS</p>
+              <p class="project__sentence">I’m focusing on <span class="font-weight-text">improving
+                  my skills of React and React ecosystem</span> for building interactive applications.</p>
             </div>
           </div>
         </div>
@@ -286,7 +302,7 @@
             and ready to apply them to real business challenges.</p>
           <p class="subtitle-company__sentence">I <span class="font-purple">value mentorship and knowledge</span>
             sharing so I’m seeking for a <span class="font-purple">workplace that is based on
-            these principles.</span></p>
+              these principles.</span></p>
           <p class="subtitle-company__sentence">At the same time, I strongly desire to help to build a better
             Future and to achieve that I searching for a team that focuses on
             <span class="font-purple">edtech</span> and/or <span class="font-purple">innovative</span> areas
