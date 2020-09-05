@@ -59,6 +59,9 @@ ul {
 .container {
   @include flex-col();
   min-height: 100%;
+  margin: auto;
+  padding: 0 16px;
+  max-width: 960px;
 }
 
 .header {
@@ -917,10 +920,6 @@ ul {
   .header__text {
     justify-content: flex-start;
     margin-right: 3em;
-  }
-
-  .main {
-    padding: 0 20%;
   }
 
   .main__short-information {
