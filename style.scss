@@ -118,7 +118,7 @@ ul {
   @include flex-row();
   justify-content: flex-end;
   width: 170px;
-  background-image: url(./img/github_black.svg);
+  background-image: url(./img/github_black@3x.png);
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: left;
@@ -184,7 +184,7 @@ ul {
 .main__nav::before {
   position: absolute;
   content: '';
-  background-image: url(./img/background_main.svg);
+  background-image: url(./img/background_main-min.svg);
   width: 141px;
   height: 137px;
   z-index: -1;
@@ -318,6 +318,7 @@ ul {
 .subtitle-hexlet__link {
   @include flex-row();
   justify-content: space-between;
+  align-items: center;
   width: 200px;
   padding: 5px 10px;
   color: #686DCF;
@@ -336,7 +337,11 @@ ul {
   &:hover {
     text-decoration: underline;
   }
+}
 
+.link-hexlet__img {
+  max-width: 20px;
+  max-height: 10px;
 }
 
 .main__projects {
@@ -396,6 +401,7 @@ ul {
 .project__github {
   @include flex-row();
   justify-content: space-around;
+  align-items: center;
   padding: 5px;
   width: 50%;
   color: #FFFFFF;
@@ -413,12 +419,14 @@ ul {
 .github {}
 
 .github__image {
-  object-fit: contain;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .project__netlify {
   @include flex-row();
   justify-content: space-around;
+  align-items: center;
   padding: 5px;
   width: 50%;
   color: #686DCF;
@@ -436,7 +444,8 @@ ul {
 .netlify {}
 
 .netlify__image {
-  object-fit: contain;
+  max-width: 20px;
+  max-height: 10px;
 }
 
 .project__description {
@@ -554,6 +563,11 @@ ul {
   }
 }
 
+.telegram__image {
+  max-width: 22px;
+  max-height: 22px;
+}
+
 .contact__email {
   @include flex-row();
   padding: 5px;
@@ -567,6 +581,11 @@ ul {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.email__image {
+  max-width: 24px;
+  max-height: 16px;
 }
 
 @media screen and (min-width: 640px) {
