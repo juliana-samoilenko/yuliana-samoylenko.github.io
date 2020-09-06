@@ -55,7 +55,7 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  color: #dbddfb80;
+  color: rgba(219, 221, 251, 0.502);
   line-height: 120px;
   font-size: 8em;
   z-index: -1;
