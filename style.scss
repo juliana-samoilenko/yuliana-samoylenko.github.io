@@ -362,16 +362,17 @@ ul {
   @include flex-row();
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-right: -20px;
 }
 
 .projects__project {
   @include flex-col();
-  flex: 0 1 calc(25% - 1em);
+  flex: 1 1 320px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  margin-bottom: 50px;
-  min-width: 310px;
   max-width: 370px;
+  margin-bottom: 50px;
+  margin-right: 20px;
 }
 
 .project {}
@@ -382,9 +383,8 @@ ul {
 }
 
 .project__image {
-  object-fit: contain;
-  min-width: 310px;
-  max-width: 370px;
+  object-fit: cover;
+  width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -395,12 +395,9 @@ ul {
 
 .project__github {
   @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
+  justify-content: space-around;
+  padding: 5px;
   width: 50%;
-  background-image: url(./img/github_white.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
   color: #FFFFFF;
   background-color: #333333;
 
@@ -413,14 +410,17 @@ ul {
   }
 }
 
+.github {}
+
+.github__image {
+  object-fit: contain;
+}
+
 .project__netlify {
   @include flex-row();
-  justify-content: flex-start;
-  padding: 5px 0px 5px 15px;
+  justify-content: space-around;
+  padding: 5px;
   width: 50%;
-  background-image: url(./img/purple_link.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% top 50%;
   color: #686DCF;
   background-color: #DBDDFB;
 
@@ -431,6 +431,12 @@ ul {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.netlify {}
+
+.netlify__image {
+  object-fit: contain;
 }
 
 .project__description {
@@ -472,8 +478,6 @@ ul {
 
 .now__description {
   @include flex-col();
-  min-width: 310px;
-  max-width: 370px;
 }
 
 .now__title {
@@ -491,17 +495,15 @@ ul {
 
 .now__Housework-Todoer {
   @include flex-col();
-  flex: 0 1 calc(25% - 1em);
+  flex: 1 1 320px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  min-width: 310px;
   max-width: 370px;
 }
 
 .now__subtitle {
   @include flex-row();
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 90px;
 }
 
@@ -611,29 +613,8 @@ ul {
     margin-right: 5em;
   }
 
-  .projects__project {
-    flex: 0 1 calc(50% - 1em);
-  }
-
-  .now__container {
-    justify-content: space-around;
-  }
-
-  .now__subtitle  {
-    justify-content: flex-start;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .projects__project {
-    flex: 0 1 calc(25% - 1em);
-  }
-
-  .now__container {
-    justify-content: space-around;
-  }
-
-  .now__subtitle  {
-    justify-content: flex-start;
+  .now__description {
+    margin-right: 20px;
+    flex: 1 0 370px;
   }
 }
