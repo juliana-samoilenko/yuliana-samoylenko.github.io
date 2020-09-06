@@ -369,6 +369,8 @@ ul {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   margin-bottom: 50px;
+  min-width: 310px;
+  max-width: 370px;
 }
 
 .project {}
@@ -380,6 +382,7 @@ ul {
 
 .project__image {
   object-fit: contain;
+  min-width: 310px;
   max-width: 370px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -468,7 +471,8 @@ ul {
 
 .now__description {
   @include flex-col();
-  width: 370px;
+  min-width: 310px;
+  max-width: 370px;
 }
 
 .now__title {
@@ -489,6 +493,8 @@ ul {
   flex: 0 1 calc(25% - 1em);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
+  min-width: 310px;
+  max-width: 370px;
 }
 
 .now__subtitle {
@@ -608,7 +614,7 @@ ul {
   }
 
   .now__container {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .now__subtitle  {
@@ -622,7 +628,7 @@ ul {
   }
 
   .now__container {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .now__subtitle  {
