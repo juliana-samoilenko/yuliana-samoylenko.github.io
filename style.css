@@ -55,7 +55,7 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  color: rgba(219, 221, 251, 0.502);
+  color: #dbddfb80;
   line-height: 120px;
   font-size: 8em;
   z-index: -1;
@@ -274,6 +274,7 @@ ul {
 .main__projects {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .projects__title {
   font-size: 2em;
@@ -480,21 +481,12 @@ ul {
     width: min-content;
     left: auto;
  }
-  .header__content {
-    width: auto;
-    position: relative;
-    right: 5%;
- }
   .header__text {
     justify-content: flex-start;
     margin-right: 3em;
  }
   .main__short-information {
     max-width: 50%;
- }
-  .main__introduce {
-    flex-wrap: nowrap;
-    width: auto;
  }
   .my-story__one-col {
     width: 46%;
