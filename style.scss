@@ -346,6 +346,7 @@ ul {
 
 .main__projects {
   @include flex-col();
+  overflow: hidden;
 }
 
 .projects {}
@@ -598,12 +599,6 @@ ul {
     left: auto;
   }
 
-  .header__content {
-    width: auto;
-    position: relative;
-    right: 5%;
-  }
-
   .header__text {
     justify-content: flex-start;
     margin-right: 3em;
@@ -611,11 +606,6 @@ ul {
 
   .main__short-information {
     max-width: 50%;
-  }
-
-  .main__introduce {
-    flex-wrap: nowrap;
-    width: auto;
   }
 
   .my-story__one-col {
