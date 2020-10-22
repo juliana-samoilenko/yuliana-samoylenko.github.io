@@ -152,7 +152,7 @@ ul {
 .main__nav::before {
   position: absolute;
   content: '';
-  background-image: url(./img/background_main-min.svg);
+  background-image: url(./img/background_main.svg);
   width: 141px;
   height: 137px;
   z-index: -1;
@@ -381,7 +381,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.now__container {
+.now__personal-project {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -410,16 +410,27 @@ ul {
   border-radius: 8px;
   max-width: 370px;
 }
-.now__subtitle {
+.now__test-tasks {
+  display: flex;
+  flex-direction: column;
+}
+.test-tasks__title {
+  font-size: 2em;
+}
+.test-tasks__sentence {
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+.now__looking-company {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 90px;
 }
-.subtitle-company__title {
+.looking-company__title {
   font-size: 2em;
 }
-.subtitle-company__sentence {
+.looking-company__sentence {
   font-size: 1.1em;
   margin: 0.5em 0;
 }
