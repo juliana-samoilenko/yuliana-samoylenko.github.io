@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Portfolio of Juliana</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
 </head>
 
 <body>
@@ -145,7 +145,7 @@
 
           <a class="subtitle-hexlet__link link-hexlet" href="https://ru.hexlet.io/u/lyashka13">
             <p class="link-hexlet__title">My Hexlet profile</p>
-            <img class="link-hexlet__img" src="img/purple_link@3x .png" loading="lazy" alt="" arial-role="presentation">
+            <img class="link-hexlet__img" src="./img/purple_link@3x.png" loading="lazy" alt="" arial-role="presentation">
           </a>
           <p class="subtitle-hexlet__sentence">But exactly this <span class="font-italic">hell-ish</span> nature
             of Hexlet forced me to learn a lot of important things:</p>
@@ -199,7 +199,7 @@
               </a>
               <a class="project__netlify netlify" href="https://cranky-northcutt-c1dd23.netlify.app/">
                 <p>See on Netlify</p>
-                <img class="netlify__image" src="./img/purple_link@3x .png" alt="" arial-role="presentation">
+                <img class="netlify__image" src="./img/purple_link@3x.png" alt="" arial-role="presentation">
               </a>
             </div>
             <div class="project__description">
@@ -225,7 +225,7 @@
               </a>
               <a class="project__netlify netlify" href="https://priceless-cori-a20f9d.netlify.app/">
                 <p>See on Netlify</p>
-                <img class="netlify__image" src="./img/purple_link@3x .png" alt="" arial-role="presentation">
+                <img class="netlify__image" src="./img/purple_link@3x.png" alt="" arial-role="presentation">
               </a>
             </div>
             <div class="project__description">
@@ -250,7 +250,7 @@
               </a>
               <a class="project__netlify netlify" href="https://stoic-minsky-aaae81.netlify.app/">
                 <p>See on Netlify</p>
-                <img class="netlify__image" src="./img/purple_link@3x .png" alt="" arial-role="presentation">
+                <img class="netlify__image" src="./img/purple_link@3x.png" alt="" arial-role="presentation">
               </a>
             </div>
             <div class="project__description">
@@ -276,7 +276,7 @@
               </a>
               <a class="project__netlify netlify" href="https://friendly-noyce-b06412.netlify.app/">
                 <p>See on Netlify</p>
-                <img class="netlify__image" src="./img/purple_link@3x .png">
+                <img class="netlify__image" src="./img/purple_link@3x.png">
               </a>
             </div>
             <div class="project__description">
@@ -292,7 +292,7 @@
       </section>
 
       <section class="main__now now">
-        <div class="now__container">
+        <div class="now__personal-project">
           <div class="now__description">
             <div class="now__title">
               <a name="now">
@@ -320,7 +320,7 @@
               </a>
               <a class="project__netlify netlify" href="https://pensive-heisenberg-093927.netlify.app/">
                 <p>See on Netlify</p>
-                <img class="netlify__image" src="./img/purple_link@3x .png">
+                <img class="netlify__image" src="./img/purple_link@3x.png">
               </a>
             </div>
             <div class="project__description">
@@ -335,16 +335,89 @@
           </div>
         </div>
 
-        <div class="now__subtitle subtitle-company">
-          <div class="subtitle-company__title">
+        <div class="now__test-tasks test-tasks">
+          <div class="test-tasks__title">
+            <h5 class="font-weight-title">
+              For the last month, I completed several entrance challenges from tech companies I applied to
+            </h5>
+          </div>
+          <div class="test-tasks__description">
+            <p class="test-tasks__sentence">Each entrance task is a new challenge to my skills.</p>
+            <p class="test-tasks__sentence">Completing these tasks allowed me
+              <span class="font-purple">to consolidate knowledge</span>
+             of working with <span class="font-purple">
+              JS, React, responsive layout
+             </span> and <span class="font-purple">SOLID principles</span>. I also learned a new tool for
+            working with 2D graphics on the web - PixiJS.</p>
+          </div>
+
+          <div class="projects__container">
+            <div class="projects__project project">
+              <div class="project__illustration">
+                <img class="project__image"
+                src="./img/shop-cats-food@3x.png"
+                alt="Shop cat food"
+                loading="lazy">
+              </div>
+              <div class="project__link">
+                <a class="project__github github" href="https://github.com/Lyashka/test-task-from-FunBox">
+                  <p>See on GitHub</p>
+                  <img class="github__image" src="./img/github_white@3x.png" alt="" arial-role="presentation">
+                </a>
+                <a class="project__netlify netlify" href="https://dazzling-bardeen-99c46e.netlify.app/">
+                  <p>See on Netlify</p>
+                  <img class="netlify__image" src="./img/purple_link@3x.png" alt="" arial-role="presentation">
+                </a>
+              </div>
+              <div class="project__description">
+                <p class="project__title font-weight-title">Shop cat food</p>
+                <p class="project__short-information">
+                  React application for cat food shope, using responsive layout methodology
+                </p>
+                <p class="project__subtitle font-weight-text">Tech stack</p>
+                <p class="project__tech-stack">#CreateReactApp, #React, #SCSS, #BEM</p>
+              </div>
+            </div>
+
+            <div class="projects__project project">
+              <div class="project__illustration">
+                <img class="project__image"
+                src="./img/cards-game@3x.png"
+                alt="Cards game"
+                loading="lazy">
+              </div>
+              <div class="project__link">
+                <a class="project__github github" href="https://github.com/Lyashka/test-task-from-HRP-consulting">
+                  <p>See on GitHub</p>
+                  <img class="github__image" src="./img/github_white@3x.png" alt="" arial-role="presentation">
+                </a>
+                <a class="project__netlify netlify" href="https://optimistic-shannon-4a21b4.netlify.app/">
+                  <p>See on Netlify</p>
+                  <img class="netlify__image" src="./img/purple_link@3x.png" alt="" arial-role="presentation">
+                </a>
+              </div>
+              <div class="project__description">
+                <p class="project__title font-weight-title">Cards game</p>
+                <p class="project__short-information">
+                  A small animation application will distribute the deck of cards by suit
+                </p>
+                <p class="project__subtitle font-weight-text">Tech stack</p>
+                <p class="project__tech-stack">#JS, #PixiJS, #Pacel, #SOLID</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="now__looking-company looking-company">
+          <div class="looking-company__title">
             <h5 class="font-weight-title">And I’m looking for a company to work with</h5>
           </div>
-          <p class="subtitle-company__sentence">I’ve learned and practiced a lot of things over the year,
+          <p class="looking-company__sentence">I’ve learned and practiced a lot of things over the year,
             and ready to apply them to real business challenges.</p>
-          <p class="subtitle-company__sentence">I <span class="font-purple">value mentorship and knowledge</span>
+          <p class="looking-company__sentence">I <span class="font-purple">value mentorship and knowledge</span>
             sharing so I’m seeking for a <span class="font-purple">workplace that is based on
               these principles.</span></p>
-          <p class="subtitle-company__sentence">At the same time, I strongly desire to help to build a better
+          <p class="looking-company__sentence">At the same time, I strongly desire to help to build a better
             Future and to achieve that I searching for a team that focuses on
             <span class="font-purple">edtech</span> and/or <span class="font-purple">innovative</span> areas
             (drones, IoT and so on).</p>
